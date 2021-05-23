@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Generate website reference link</title>
+<title id="titleday"></title>
+  	<script>
+		var day = Day = new Date().getDay();
+		var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		document.getElementById("titleday").innerHTML = "It's <i>" + days[Day] + "</i>.";
+	</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
