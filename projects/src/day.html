@@ -1,16 +1,19 @@
 <html>
 <head>
 <title>Day of the Week</title>	
-
+ <link href="style/day/style.css" rel="stylesheet" />
 </head>
 <body>
+	<h1 data-text="qhswrd" id="text"></h1>
 	<p id="text"></p>
 	
 	
 	<script>
+		
 		var day = Day = new Date().getDay();
 		var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 		document.getElementById("text").innerHTML = "It's <i>" + days[Day] + "</i>.";
+		document.body.innerHTML = document.body.innerHTML.replace('qhswrd', days[Day]);
 	</script>
 </body>
   <html>
