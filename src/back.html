@@ -8,10 +8,39 @@
         <title>File Viewer</title>
         <link rel="stylesheet" href="https://avipunes.github.io/file-viewer/global.css" />
     </head>
-<body>
-<file-viewer
+
+    <body>
+        <div class="container">
+            <pre>
+                <code>
+&lt;file-viewer
+    id="file-viewer"
     filename="back.gif"
     url="https://theunkn0wndev.github.io/src/back.gif"
-></file-viewer>
+&gt;&lt;/file-viewer&gt;
+                </code>
+            </pre>
+            <div class="file-viewer-container">
+                <file-viewer
+                    id="file-viewer"
+                    filename="back.gif"
+                    url="https://theunkn0wndev.github.io/src/back.gif"
+                ></file-viewer>
+            </div>
+            <hr />
+
+
+        <script>
+            document
+                .querySelector("#file-viewer")
+                .addEventListener("onload", (e) => console.log("e", e));
+        </script>
     </body>
+
+    <style>
+        file-viewer {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </html>
